@@ -58,13 +58,13 @@ for row in sitka_file:
     date.append(the_date)
 import matplotlib.pyplot as plt
 
-fig, ax = plt.subplots(2)
+#fig, ax = plt.subplots(2)
 
 #fig1= plt.figure()
 
-ax[1]= plt.plot(date, high, c="red",alpha=0.5)
-ax[0]= plt.plot(date, low, c="blue", alpha=0.5)
-
+#ax[1]= plt.plot(date, high, c="red",alpha=0.5)
+#ax[0]= plt.plot(date, low, c="blue", alpha=0.5)
+plt.title("Daily high and low temperatures- 2018\nDeath Valley & Sitka, Alaska", fontsize=16)
 plt.plot(date, high, c="red",alpha=0.5)
 plt.plot(date, low, c="blue", alpha=0.5)
 
@@ -73,7 +73,7 @@ plt.fill_between(date, high, low, facecolor= 'blue', alpha=0.1)
 
 #fig1.autofmt_xdate()
 
-plt.ylabel("Temperature (F)", fontsize=16)
+plt.ylabel("Temp (F)", fontsize=16)
 plt.tick_params(axis="both", labelsize=16)
 
 #fig2= plt.figure()
@@ -81,7 +81,7 @@ plt.tick_params(axis="both", labelsize=16)
 plt.plot(dates, highs, c="red",alpha=0.5)
 plt.plot(dates, lows, c="blue", alpha=0.5)
 
-plt.title("Daily high and low temperatures- 2018\nDeath Valley & Sitka, Alaska", fontsize=16)
+#plt.title("Daily high and low temperatures- 2018\nDeath Valley & Sitka, Alaska", fontsize=16)
 plt.xlabel("", fontsize=12)
 
 plt.fill_between(dates, highs, lows, facecolor= 'blue', alpha=0.1)
